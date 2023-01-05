@@ -37,6 +37,10 @@ public class Main {
 
         // TEST METODY FINDALL
 
-
+        UserDao userDao = new UserDao();
+        User[] all = userDao.findAll();
+        for (User u : all) {
+            System.out.println(u);
+        }
     }
 }
